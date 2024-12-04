@@ -1,16 +1,15 @@
 name: Java Deployment
-
 on:
   push:
     branches:
       - main
       - develop
-      - feature/pedido
+      - feature/pedidos
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
+
       - name: Checkout repository
         uses: actions/checkout@v2
 

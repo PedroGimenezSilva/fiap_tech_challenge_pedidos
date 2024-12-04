@@ -4,7 +4,7 @@ on:
     branches:
       - develop
       - main
-      - feature/pedido
+      - feature/pedidos
 jobs:
   run-ci:
     runs-on: ubuntu-latest
