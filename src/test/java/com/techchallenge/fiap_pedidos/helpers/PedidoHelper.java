@@ -32,8 +32,8 @@ public class PedidoHelper {
                 PedidoStatus.INICIAL,
                 "client1",
                 List.of(newComboDto()),
-                OffsetDateTime.now(),
-                OffsetDateTime.now()
+                OffsetDateTime.now().toString(),
+                OffsetDateTime.now().toString()
         );
     }
 
