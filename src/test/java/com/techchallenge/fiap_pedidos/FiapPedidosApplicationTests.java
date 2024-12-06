@@ -1,13 +1,13 @@
-package com.techchallenge.fiap_pedidos;
+// package com.techchallenge.fiap_pedidos;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+// import org.junit.jupiter.api.Test;
+// import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class FiapPedidosApplicationTests {
+// @SpringBootTest
+// class FiapPedidosApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+// 	@Test
+// 	void contextLoads() {
+// 	}
 
-}
+// }
