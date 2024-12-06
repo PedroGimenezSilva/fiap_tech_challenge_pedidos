@@ -1,0 +1,16 @@
+spring:
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+  application:
+    name: fiap-pedidos
+  profiles:
+    active: ${ENVIRONMENT:local}
+  data:
+    mongodb:
+      uri: mongodb://fiap:fc1x2Mq0n3ZnOjm4@mongodb-fiap-tech-challenge-pedido.cluster-cpsw6q668tdw.us-east-1.docdb.amazonaws.com:27017/?retryWrites=false
+
+server.port: 8080
+
+server:
+  error:
+    include-stacktrace: never
