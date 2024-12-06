@@ -7,6 +7,8 @@ import com.techchallenge.fiap_pedidos.pkg.dto.pedido.ComboDto;
 import com.techchallenge.fiap_pedidos.pkg.dto.pedido.PedidoDto;
 import com.techchallenge.fiap_pedidos.pkg.dto.pedido.ProdutoComboDto;
 
+import java.time.OffsetDateTime;
+
 public class PedidoMapper {
 
     public static PedidoDto toPedidoDto(PedidoEntity pedido) {
@@ -15,8 +17,8 @@ public class PedidoMapper {
                 pedido.status(),
                 pedido.clientId(),
                 pedido.combos().stream().map(PedidoMapper::toComboDto).toList(),
-                pedido.createdAt(),
-                pedido.updatedAt()
+                pedido.createdAt().toString(),
+                pedido.updatedAt().toString()
         );
     }
 
@@ -26,8 +28,8 @@ public class PedidoMapper {
                 pedido.status(),
                 pedido.clientId(),
                 pedido.combos().stream().map(PedidoMapper::toComboEntity).toList(),
-                pedido.createdAt(),
-                pedido.updatedAt()
+                OffsetDateTime.parse(pedido.createdAt()),
+                OffsetDateTime.parse(pedido.updatedAt())
         );
     }
 

@@ -26,17 +26,6 @@
 //         return new ComboDto(newProdutoComboDto(), newProdutoComboDto(), newProdutoComboDto(), newProdutoComboDto());
 //     }
 
-//     public static PedidoDto newPedidoDto() {
-//         return new PedidoDto(
-//                 "123",
-//                 PedidoStatus.INICIAL,
-//                 "client1",
-//                 List.of(newComboDto()),
-//                 OffsetDateTime.now(),
-//                 OffsetDateTime.now()
-//         );
-//     }
-
 //     public static ComboEntity criarComboValido() {
 //         ProdutoComboEntity produtoCombo = new ProdutoComboEntity("produto1", 1, BigDecimal.valueOf(10.00));
 //         return new ComboEntity(produtoCombo, produtoCombo, produtoCombo, produtoCombo);
