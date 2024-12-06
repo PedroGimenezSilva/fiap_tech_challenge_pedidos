@@ -1,5 +1,16 @@
-## Como gerar a  imagem docker da aplicação
+# API Pedidos
 
-1. Usar o comando do maven `mvn clean package -DskipTests` para gerar o arquivo .jar.
-2. Comando `docker compose build` para gerar a imagem da aplicação que será utilizada no docker compose.
-3. Para subir os containers basta usar o comando `docker compose up -d`.
+- Criação de pedidos;
+- Atualização de pedidos;
+- Acompanhamento de pedidos pelza cozinha;
+- Acompanhamento de pedidos individuais;
+
+### Banco de dados:
+
+DocumentDb
+
+Link de
+uma [verificação de cobertura](https://github.com/PedroGimenezSilva/fiap_tech_challenge_pedidos/actions/runs/12192110385).
+
+Imagem de verificação de cobertura no repositório:
+![alt text](Documents/evidencia_cobertura_1.png)
